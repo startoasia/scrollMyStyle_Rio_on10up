@@ -1,0 +1,82 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    /* overflow: hidden; */
+
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.color1 {
+    height: 2000px;
+    /* Replace with your actual content height */
+    /* overflow-y: scroll; */
+    background-color: tan;
+    /* padding-right: 20px; Add padding for scrollbar */
+}
+
+.color2 {
+    height: 2000px;
+    /* Replace with your actual content height */
+    /* overflow-y: scroll; */
+    background-color: rgb(56, 46, 166);
+    /* padding-right: 20px; Add padding for scrollbar */
+}
+
+
+
+.toTopConteol {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 10%;
+    right: 9.5%;
+    background-color: #65B400;
+    transition: all .3s;
+}
+.toTop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 1.25;
+    color: #fff;
+    transition: all .3s;
+}
+.toTopConteol:hover{
+    background-color: #fff;
+}
+.toTopConteol:hover >.toTop{
+    color: #65B400;
+}
+/* 滾動條設定 */
+.custom-scrollbar {
+    position: fixed;
+    top: 19%;
+    right: 11%;
+    height: 40%;
+    width: 1px;
+    background-color: #65B400;
+}
+
+.scroll-thumb {
+    width: 10px;
+    height: 10px;
+    background-color: #65B400;
+    border-radius: 50%;
+    position: absolute;
+    left: 43%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
